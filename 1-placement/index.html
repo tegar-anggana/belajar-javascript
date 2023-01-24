@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JavaScript</title>
+  <!-- Placement 2 - Menggunakan script tag -->
+  <!-- HTML dibaca dari atas ke bawah, kemudian saat bertemu alert(), fungsi alert ini perlu tindakan ok dari user sebelum lanjut ke baris kode berikutnya. jadi browser akan loading dan belum memuat bagian body nya... sebelum user klik OK. -->
+  <script>
+    alert('Success')
+  </script>
+</head>
+
+<body>
+  <!-- Placement 1 - Menulis JS di dalam HTML markup -->
+  <!-- Tidak direkomendasikan -->
+  <button onclick="alert('Success')">Click Me</button>
+
+  <!-- Placement 3 - Di bagian akhir tag body -->
+  <!-- Direkomendasikan, tetapi masih ada yang lebih direkomendasikan: dipisah di file lain (separation of concerns) -->
+  <script>
+    // alert('Success')
+    console.log('Sukses') // console log akan muncul di inspector browser bagian Console.
+  </script>
+
+  <!-- Placement 4 - External JavaScript -->
+  <!-- Paling direkomendasikan -->
+  <script src="main.js"></script>
+</body>
+
+</html>
